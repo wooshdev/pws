@@ -16,3 +16,9 @@ CC = cc
 
 server: main.c config.h validator.c
 	$(CC) -g -o $@ main.c -pthread -lm
+
+install: server
+	cp server /usr/bin/pws
+
+clean:
+	rm -f server
