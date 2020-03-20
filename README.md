@@ -8,7 +8,7 @@ make  # 'make' will create the binary 'server'.
 ```
 To create a secure HTTPS server run these commands:
 ```sh
-patch -d . < patches/libressl.diff  # Apply the LibreSSL patch.
+patch < patches/libressl.diff       # Apply the LibreSSL patch.
 edit config.h                       # Edit the configuration (enter your certificate details in here).
 make                                # 'make' will create the binary 'server'.
 ```
